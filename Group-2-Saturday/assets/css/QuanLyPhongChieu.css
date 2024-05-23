@@ -1,0 +1,515 @@
+.combobox-wrapper {
+    position: absolute;
+    margin-top: 50px; /* Điều chỉnh khoảng cách từ trên xuống */
+    margin-right: 10px; /* Điều chỉnh khoảng cách từ phải sang trái */
+    z-index: 1; /* Đảm bảo combobox hiển thị trên các phần khác */
+}
+.combobox-wrapper select {
+    height: 30px;
+    width: 200px; /* Điều chỉnh độ rộng của combobox */
+}
+.qun-l-phng {
+    margin: 0;
+    width: 250px;
+    position: relative;
+    font-size: inherit;
+    font-weight: 700;
+    font-family: inherit;
+    display: inline-block;
+  }
+  .qun-l-phng-chiu-wrapper {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 14px;
+  }
+  .loai-phong,
+  .txtten {
+    box-sizing: border-box;
+  }
+  .loai-phong {
+    width: 82px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3px 0 0;
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: var(--font-size-mini);
+    color: var(--color-black);
+  }
+  .txtten {
+    font-size: 14px;
+    height: 25px;
+    flex: 1;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray);
+    min-width: 178px;
+  }
+  .ten-phong,
+  .ten-phong-child {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .ten-phong {
+    align-self: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 11px;
+  }
+  .ten-phong-child {
+    width: 86px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    height: 23px;
+    flex-direction: column;
+    padding: 4px 0 0;
+    box-sizing: border-box;
+    font-family: var(--font-inter);
+    font-weight: 700;
+    font-size: var(--font-size-mini);
+    color: var(--color-black);
+  }
+  .txtloai {
+    font-size: 14px;
+    height: 25px;
+    flex: 1;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-gray);
+    box-sizing: border-box;
+    min-width: 178px;
+  }
+  .ten-phong1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-7xs);
+  }
+  .tnh-trng {
+    position: relative;
+    line-height: 130%;
+    display: inline-block;
+    min-width: 81px;
+  }
+  .tinh-trang {
+    margin-right: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-7xs) 0 0;
+    font-size: var(--font-size-mini);
+  }
+  .radiodc {
+    font-size: 12px;
+    margin: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: var(--br-8xs);
+    border: 1px solid var(--color-gray);
+    box-sizing: border-box;
+  }
+  .ang-chiu {
+    position: relative;
+    line-height: 130%;
+    display: inline-block;
+    min-width: 55px;
+  }
+  .radio-s-p {
+    flex-direction: column;
+    padding: var(--padding-8xs) 0 0;
+  }
+  .radio-d-c,
+  .radio-s-p {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .radio-d-c {
+    flex-direction: row;
+    gap: var(--gap-7xs);
+  }
+  .danh-gia-trang-thai {
+    margin-left: 10px;
+    margin-top: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 120px;
+    font-size: 12px;
+    padding: var(--padding-12xs) 0 0;
+    align-items: center; /* Căn giữa theo chiều cao */
+  }
+  .danh-gia-trang-thai input[type="radio"] {
+    vertical-align: middle; /* Căn giữa theo chiều cao */
+}
+  .radiosp {
+    align-items: center; /* Căn giữa theo chiều cao */
+    margin: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: var(--br-8xs);
+    border: 1px solid var(--color-gray);
+    box-sizing: border-box;
+  }
+  .sp-chiu {
+    position: relative;
+    line-height: 130%;
+    display: inline-block;
+    min-width: 49px;
+  }
+  .sp-chiu-wrapper {
+    flex-direction: column;
+    padding: var(--padding-8xs) 0 0;
+  }
+  .danh-gia-trang-thai1,
+  .radiosp-parent,
+  .sp-chiu-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .radiosp-parent {
+    flex-direction: row;
+    gap: var(--gap-7xs);
+  }
+  .danh-gia-trang-thai1 {
+    flex-direction: column;
+    padding: var(--padding-12xs) 0 0;
+  }
+  .radioss {
+    font-size: 12px;
+    margin: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: var(--br-8xs);
+    border: 1px solid var(--color-gray);
+    box-sizing: border-box;
+  }
+  .sn-sng {
+    position: relative;
+    line-height: 130%;
+    display: inline-block;
+    min-width: 45px;
+  }
+  .btn-xoa,
+  .table,
+  .txt-loai {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .table {
+    flex-direction: column;
+    padding: var(--padding-7xs) 0 0;
+  }
+  .btn-xoa,
+  .txt-loai {
+    flex-direction: row;
+  }
+  .btn-xoa {
+    gap: var(--gap-7xs);
+  }
+  .f-r-a-m-e,
+  .ten-phong-parent {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .ten-phong-parent {
+    width: 367px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 7.5px;
+  }
+  .f-r-a-m-e {
+    align-self: stretch;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 23px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: var(--font-size-3xs);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  
+  .danh-sch-gh {
+    position: relative;
+    line-height: 130%;
+    display: inline-block;
+    min-width: 109px;
+  }
+  .ghe-doi {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-mini);
+  }
+  .table-parent {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    height: 250px; /* Đã được chỉ định cố định chiều cao */
+    width: 800px;
+    overflow: auto; /* Thêm trạng thái cuộn khi nội dung vượt quá kích thước */
+}
+
+
+.table1 {
+  border-spacing: 0px;
+    border: 0;
+    background-color: var(--color-gainsboro);
+    outline: 0;
+    table-layout: fixed; /* Đảm bảo các ô có cùng kích thước */
+}
+
+/* Điều chỉnh chiều rộng của các ô trong bảng */
+.table1 td,
+.table1 th {
+    width: 50px; /* Điều chỉnh kích thước chiều rộng của mỗi ô */
+    height: 20px; /* Điều chỉnh kích thước chiều cao của mỗi ô */
+    padding: 5px; /* Khoảng cách giữa nội dung của mỗi ô và viền của ô */
+    text-align: center; /* Căn giữa nội dung của mỗi ô */
+    background-color: #fff;
+}
+.table1 th {
+  position: sticky;
+    top: 0;
+}
+  .selected {
+    background-color: yellow; /* Màu của ô khi được chọn */
+}
+.seat {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  background-size: 70%; /* Đảm bảo hình ảnh sẽ hiển thị với kích thước 80% của ô */
+  background-repeat: no-repeat; /* Chắc chắn rằng hình ảnh không được lặp lại */
+  background-position: center; /* Đảm bảo hình ảnh luôn nằm ở trung tâm của ô */
+  
+}
+/* ///////// */
+
+.btnxoa, .btnthem,.btnsua,.btnthemhang,.btnthemcot {
+    width: 100px;
+    position: relative; /* Thay đổi từ absolute thành relative */
+    display: inline-block; /* Thêm thuộc tính display để nút không bị tràn ra khỏi div */
+    background-color: transparent; /* Thay đổi màu nền thành trong suốt */
+    border: 1px solid var(--color-gainsboro); /* Thêm border */
+    border-radius: 10px; /* Bo góc */
+    padding: 10px 20px; /* Thêm padding */
+    font-size: 16px; /* Cỡ chữ */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnxoa:hover, .btnthem:hover ,.btnsua:hover,.btnthemhang:hover,.btnthemcot:hover{
+    background-color: rgb(160, 202, 219); /* Màu nền khi di chuột qua */
+    
+}
+.btnxoa:focus, .btnthem:focus ,.btnsua:focus,.btnthemhang:focus,.btnthemcot:focus{
+    outline: none; /* Xóa đường viền khi focus */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Hiệu ứng focus */
+}
+.btnsua{
+  margin-left: 120px;
+  margin-top: -55px;
+}
+.btnxoa{
+  margin-left: 240px;
+  margin-top: -55px;
+}
+.btnthemhang{
+  width: 200px;
+  margin-left: 650px;
+  margin-top: -55px;
+}
+.btnthemcot{
+  width: 200px;
+  margin-left: 400px;
+  margin-top: -55px;
+}
+
+/* ////// */
+  
+ 
+
+  .ghe-vip {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 var(--padding-7xs) 24px;
+    box-sizing: border-box;
+    gap: 13px;
+    max-width: 100%;
+    text-align: left;
+    font-size: var(--font-size-mini);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  .btnghethuong,
+.btnghevip,
+.btnghedoi {
+    height: 36px;
+    flex: 1;
+    position: relative;
+    background-color: var(--color-gainsboro);
+    border: none; /* Loại bỏ viền */
+    border-radius: 5px; /* Bo góc */
+    color: #000; /* Màu chữ */
+    cursor: pointer; /* Con trỏ khi di chuột qua */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.btnghethuong:hover {
+    background-color: #007bff; /* Màu xanh dương khi hover */
+}
+
+.btnghevip:hover {
+    background-color: #dc3545; /* Màu đỏ khi hover */
+}
+
+.btnghedoi:hover {
+    background-color: #ff69b4; /* Màu hồng khi hover */
+}
+  .btns-ghe,
+  .quanlyphongchieu {
+    display: flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .btns-ghe {
+    width: 350px;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 0 0 20px;
+    gap: 25px;
+  }
+  .quanlyphongchieu {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 12px 164px 40px 18px;
+    gap: var(--gap-mini);
+    letter-spacing: normal;
+    text-align: center;
+    font-size: 25px;
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  @media screen and (max-width: 675px) {
+    .table-parent {
+      min-width: 100%;
+    }
+  }
+  @media screen and (max-width: 625px) {
+    .txt-loai {
+      flex-wrap: wrap;
+    }
+    .quanlyphongchieu {
+      padding-right: 82px;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .qun-l-phng {
+      font-size: 20px;
+    }
+  }
+
+
+  body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-inter: Inter;
+  
+    /* font sizes */
+    --font-size-mini: 15px;
+    --font-size-3xs: 10px;
+  
+    /* Colors */
+    --color-white: #fff;
+    --color-gainsboro: #d9d9d9;
+    --color-black: #000;
+    --color-gray: rgba(0, 0, 0, 0.5);
+  
+    /* Gaps */
+    --gap-mini: 15px;
+    --gap-7xs: 6px;
+  
+    /* Paddings */
+    --padding-7xs: 6px;
+    --padding-12xs: 1px;
+    --padding-8xs: 5px;
+  
+    /* Border radiuses */
+    --br-8xs: 5px;
+  }
+  .screen {
+    margin-top: -30px;
+    position: absolute;
+    left: 0;
+    right: 0; /* Đặt giá trị right để căn giữa theo chiều ngang */
+    margin-left: auto; /* Căn giữa theo chiều ngang */
+    margin-right: auto; /* Căn giữa theo chiều ngang */
+    width: 50%; /* Chiều rộng của màn chiếu bằng với bảng */
+    height: 20px; /* Chiều cao của màn chiếu, bạn có thể điều chỉnh */
+    background-color: rgb(5, 5, 5); /* Màu sắc của màn chiếu */
+    opacity: 0.5; /* Độ trong suốt của màn chiếu */
+    z-index: 1; /* Đảm bảo màn chiếu nằm trên bảng */
+    text-align: center; /* Căn giữa nội dung của mỗi ô */
+    color: white; /* Màu chữ */
+  }
+.btn_datlam{
+  background-color: #d9d9d9;
+  width: 70px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+}
+.btn_loaighe{
+  margin-left: 500px;
+  background-color: #d9d9d9;
+  width: 180px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+}
+.ds_giaithich {
+  display: flex; /* Sử dụng flexbox để xếp các phần tử hàng ngang */
+  align-items: center; /* Căn các phần tử theo chiều dọc */
+}
+
+.item_giaithich {
+  margin-left: 10px;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px; /* Khoảng cách giữa hộp màu và nhãn */
+}

@@ -1,0 +1,56 @@
+/* Thiết lập font chữ và màu nền cho trang */
+body {
+    font-family: Arial, sans-serif; 
+    background-color: hsl(0, 0%, 85%);
+    font-size: 16px; 
+}
+
+/* Phần tiêu đề "Danh sách người dùng" */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Bảng hiển thị danh sách người dùng */
+
+
+/* Style cho button-group */
+/* Style cho button-group */
+.button-group {
+    text-align: left; /* Căn phải */
+    margin-bottom: 20px;
+    margin-top: 10px; /* Khoảng cách từ phía trên */
+    background-color: #0073ff;
+}
+
+/* Style cho button trong button-group */
+.button-group button {
+    background-color: #0073ff;
+    color: rgb(9, 9, 9);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+/* Hover style cho button */
+.button-group button:hover {
+    background-color: #0041b9;
+}
+/* Thiết lập các kiểu cho tất cả các button */
+button {
+    background-color: #0073ff;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px; /* Bo tròn góc */
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+button:hover {
+    background-color: #0041b9;
+    color: aliceblue;
+    font-weight: bold;
+}

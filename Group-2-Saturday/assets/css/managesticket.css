@@ -1,0 +1,30 @@
+/* Thiết lập font chữ và màu nền cho trang */
+body {
+    font-family: Arial, sans-serif; 
+    background-color: #f4f4f4;
+}
+
+/* Phần tiêu đề "Danh sách vé bán" */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Bảng hiển thị danh sách vé bán */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Style cho các thẻ <th> và <td> trong bảng */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style cho thẻ <th> trong bảng */
+th {
+    background-color: #f2f2f2;
+}

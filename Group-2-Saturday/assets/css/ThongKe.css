@@ -1,0 +1,40 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+#myChart {
+    width: 80%;
+    height: 600px;
+}
+
+.movie-item {
+    width: 200px;
+    
+    /* Giới hạn chiều cao tối đa của hình ảnh */
+    /* Đặt chiều rộng của mỗi phần tử là 200px */
+    display: inline-block;
+    /* Hiển thị phần tử theo hàng ngang */
+    margin-right: 10px;
+    /* Khoảng cách giữa các phần tử */
+    vertical-align: top;
+    /* Hiển thị phần tử ở đỉnh */
+}
+
+.movie-item img {
+    width: 100px;
+    /* Đặt chiều rộng cố định cho hình ảnh */
+    height: auto;
+    /* Cho phép tỷ lệ khung hình tự động */
+    max-height: 100px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.movie-info {
+    text-align: center;
+    font-size: 16px;
+}

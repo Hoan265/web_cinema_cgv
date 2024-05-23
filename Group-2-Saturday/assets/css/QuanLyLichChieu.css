@@ -1,0 +1,126 @@
+.actions {
+    display: flex;
+    
+    margin-bottom: 20px;
+}
+
+.actions button {
+    margin-left: 10px;
+    width: 80px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+
+
+form div {
+    margin-bottom: 10px;
+}
+
+.table-container {
+    /* max-height: 300px;  */
+    overflow-y: auto; /* Cho phép cuộn dọc nếu nội dung vượt qua kích thước */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.cbbPhim{
+    width: 400px;
+    height: 38px;
+}
+.dulieutime{
+    width: 400px;
+    height: 34px;
+}
+.cbbPhong{
+    width: 400px;
+    height: 38px;
+}
+.lbtime{
+    width: 150px;
+}
+.lbPhim{
+    width: 150px;
+
+}
+.lbPhong{
+    width: 150px;
+}
+.lbgia{
+    width: 150px;
+}
+.gia{
+    width: 400px;
+    height: 32px;
+}
+.lbid{
+    width: 150px;
+}
+.dl_id{
+    width: 400px;
+    height: 32px;
+}
+.selected-row {
+    background-color: #e0e0e0; /* Đổi màu nền của dòng được chọn */
+    color: #333; /* Đổi màu văn bản của dòng được chọn */
+}
+
+
+.pagination-wrapper {
+    text-align: center; /* Căn giữa nội dung */
+    margin-top: 20px; /* Khoảng cách từ bảng */
+}
+
+.pagination-wrapper a {
+    margin: 0 5px; /* Khoảng cách giữa các số trang */
+    text-decoration: none; /* Loại bỏ gạch chân mặc định */
+    color: #333; /* Màu chữ */
+    display: inline-block; /* Hiển thị như khối để có thể sử dụng border-radius */
+    border-radius: 50%; /* Tạo border hình tròn */
+    width: 30px; /* Độ rộng */
+    height: 30px; /* Chiều cao */
+    line-height: 30px; /* Căn giữa theo chiều dọc */
+    background-color: #ADD8E6; /* Màu nền xanh dương nhạt */
+}
+
+.pagination-wrapper a.active {
+    background-color: #4CAF50; /* Màu nền xanh lá cây cho trang hiện tại */
+    color: white; /* Màu chữ trắng cho trang hiện tại */
+}
+
+.pagination-wrapper a:hover {
+    background-color: #87CEFA; /* Màu nền xanh dương nhạt khi di chuột qua */
+    color: black; /* Màu chữ đen khi di chuột qua */
+}
